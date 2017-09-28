@@ -11,13 +11,7 @@ layout: default
 
     <p id="diceroll_res"></p>
 
-    <script>
-        function myfun() {
-
-          var str = document.getElementById("diceroll_form").placeholder;
-          document.getElementById("diceroll_res").innerHTML = "Result: " + str;
-        }
-
+<!--     <script>
         function formula_roll() {
           var str = document.getElementById("diceroll_form").value
           str = str.replace(/(\s+)/g, ''); //removing whitespaces
@@ -67,7 +61,7 @@ layout: default
           //return(rolls); //result is an array of all rolls, which are also arrays of separate dice rolls with corresponding signs
           document.getElementById("diceroll_res").innerHTML = "Result: ";//+ result;
       }
-    </script>
+    </script> -->
 
     <form class="form-horizontal">
         <fieldset>
@@ -86,13 +80,15 @@ layout: default
         
         </fieldset>
         </form>
+
         <script>
-            var form = document.querySelector("form");
-            form.addEventListener("submit", function(event) {
-              myfun();
-              event.preventDefault();
-            });
-          </script>
+          var form = document.querySelector("form");
+           form.addEventListener("submit", function(event) {
+            var str = document.getElementById("diceroll_form").placeholder;
+            document.getElementById("diceroll_res").innerHTML = "Result: " + str;
+            //event.preventDefault();
+           });
+        </script>
   </div>
 
 </article>
