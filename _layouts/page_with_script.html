@@ -9,18 +9,13 @@ layout: default
   <div class="entry">
     {{ content }}
 
-    <p id="demo"></p>
-    
-    <script>
-    document.getElementById("demo").innerHTML = 666;
-    </script>
-
     <p id="diceroll_res"></p>
 
     <script>
         function myfun() {
+
           var str = document.getElementById("diceroll_form").placeholder;
-          document.getElementById("demo").innerHTML = str;
+          document.getElementById("diceroll_res").innerHTML = "Result: " + str;
         }
 
         function formula_roll() {
@@ -85,12 +80,19 @@ layout: default
           <label class="col-md-4 control-label" for="textinput">Dice Formula</label>  
           <div class="col-md-4">
           <input id="diceroll_form" name="rollForm" type="text" placeholder="1d20" class="form-control input-md">
-          <button class="button" onclick="myfun()">Roll!</button>
+          <input class="button" type="submit">Roll!</button>
           </div>
         </div>
         
         </fieldset>
         </form>
+        <script>
+            var form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+              myfun();
+              event.preventDefault();
+            });
+          </script>
   </div>
 
 </article>
