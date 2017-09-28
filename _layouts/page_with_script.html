@@ -6,12 +6,16 @@ layout: default
 
   <h1>{{ page.title }}</h1>
 
+  <script src="diceroll.js"></script>
+
   <div class="entry">
     {{ content }}
-    <form method="post">
+    <form method="post" name="rollForm" id="diceroll_form">
         Dice Formula : <input type="text" name="droll" value="1d20"/>
-        <input type="submit" value="Roll!"/>
+        <input type="submit" value="Roll!" onclick="formula_roll()"/>
       </form>
+
+      <p id="diceroll_res"></p>
   </div>
 
 </article>

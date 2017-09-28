@@ -1,4 +1,5 @@
-var formula_roll = function(str) {
+function formula_roll() {
+    var str = document.getElementById("diceroll_form").value
     str = str.replace(/(\s+)/g, ''); //removing whitespaces
     var dices = str.split(/[+-]/g); //getting formulas for all dicerolls
     var signs = str.split(/[^+-]/g).filter(function(el){return el !== ''}); //getting signs between dice rolls
@@ -29,5 +30,20 @@ var formula_roll = function(str) {
         else rolls.push([number]); //else write the constant as a roll
     }
 
-    return(rolls); //result is an array of all rolls, which are also arrays of separate dice rolls with corresponding signs
+    var result = "( " + rolls[0][0];
+    for(j = 1; j < rolls[0].length; ++j) {
+        result = result + " +" + rolls[0][j];
+    }
+    result = result + " )";
+
+    for(i = 1; i < rolls.length; ++i) {
+        result = result + " + ( " + rolls[i][0];
+        for(j = 1; j < rolls[i].length; ++j) {
+            result = result + " +" + rolls[i][j];
+        }
+        result = result + " )";
+    }
+
+    //return(rolls); //result is an array of all rolls, which are also arrays of separate dice rolls with corresponding signs
+    document.getElementById("diceroll_res").innerHTML = result;
 }
