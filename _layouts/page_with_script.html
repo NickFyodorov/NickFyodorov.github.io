@@ -8,15 +8,14 @@ layout: default
 
   <div class="entry">
     {{ content }}
+    <form method="post">
+        Dice Formula : <input type="text" name="droll" value="1d20"/>
+        <input type="submit" value="Roll!"/>
+      </form>
+    
+      <%
+      response.write "Result:" & request.form("droll")
+      %>
   </div>
-
-  <form method="post">
-    Dice Formula : <input type="text" name="droll" value="1d20"/>
-    <input type="submit" value="Roll!"/>
-  </form>
-
-  <%
-  response.write "Result:" & request.form("droll")
-  %>
 
 </article>
