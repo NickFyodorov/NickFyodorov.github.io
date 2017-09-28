@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_with_script
 title: Dice Roller
 permalink: /diceroll/
 ---
