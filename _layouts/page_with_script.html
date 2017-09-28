@@ -74,11 +74,23 @@ layout: default
       }
     </script>
 
-    <form method="POST" name="rollForm" id="diceroll_form">
-        Dice Formula : <input type="text" name="droll" value="1d20"/>
-    </form>
-
-    <button onclick="myfun()">Roll!</button>
+    <form class="form-horizontal">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Form Name</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Dice Formula</label>  
+          <div class="col-md-4">
+          <input id="diceroll_form" name="rollForm" type="text" placeholder="1d20" class="form-control input-md">
+          <button class="button" onclick="myfun()">Roll!</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
   </div>
 
 </article>

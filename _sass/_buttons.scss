@@ -1,0 +1,26 @@
+.button {
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background-color:#121012;
+	-moz-border-radius:17px;
+	-webkit-border-radius:17px;
+	border-radius:17px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#fafafa;
+	font-family:Courier New;
+	font-size:21px;
+	font-weight:bold;
+	padding:9px 26px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button:hover {
+	background-color:#261926;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
