@@ -19,7 +19,8 @@ layout: default
 
     <script>
         function myfun() {
-          document.getElementById("demo").innerHTML = document.getElementById("diceroll_form").value;
+          var str = oForm.elements["rollForm"].value
+          document.getElementById("demo").innerHTML = str;
         }
 
         function formula_roll() {
