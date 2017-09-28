@@ -12,7 +12,7 @@ layout: default
     <p id="demo"></p>
     
     <script>
-    document.getElementById("demo").innerHTML = 777;
+    document.getElementById("demo").innerHTML = 666;
     </script>
 
 <script>
@@ -63,14 +63,14 @@ layout: default
       }
   
       //return(rolls); //result is an array of all rolls, which are also arrays of separate dice rolls with corresponding signs
-      document.getElementById("diceroll_res").innerHTML = "Result: " + result;
+      document.getElementById("diceroll_res").innerHTML = "Result: ";//+ result;
   }
     </script>
 
     <form method="POST" name="rollForm" id="diceroll_form">
         Dice Formula : <input type="text" name="droll" value="1d20"/>
-        <button onclick="formula_roll()">Roll!</button>
-      </form>
+    </form>
+    <button onclick="formula_roll()">Roll!</button>
 
       <p id="diceroll_res"></p>
   </div>
