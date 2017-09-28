@@ -45,5 +45,5 @@ function formula_roll() {
     }
 
     //return(rolls); //result is an array of all rolls, which are also arrays of separate dice rolls with corresponding signs
-    document.getElementById("diceroll_res").innerHTML = result;
+    document.getElementById("diceroll_res").innerHTML = "Result: " + result;
 }
