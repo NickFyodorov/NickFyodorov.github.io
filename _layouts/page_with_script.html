@@ -81,9 +81,9 @@ layout: default
         <script>
           function my_echo() {
             var form = document.getElementById("diceroll_form");
+            form.submit();
             var str = "Result: " + form.value;
             document.getElementById("diceroll_res").innerHTML = str;
-            return false;
           }
         </script>
   </div>
