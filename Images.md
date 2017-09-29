@@ -6,16 +6,16 @@ permalink: /images/
 
 # Blue Dragon
 
-![First Post](/images/blue_dragon.jpg "Blue Dragon"){:alt = "Blue Dragon Image"}
+![First Post](/images/blue_dragon.jpg "Blue Dragon")
 
 # Black Dragon
 
-![Second Post](/images/black_dragon.jpg "Black Dragon"){:alt = "Black Dragon Image"}
+![Second Post](/images/black_dragon.jpg "Black Dragon")
 
 # Crystallized Dragon
 
-![Third Post](/images/crystallized_dragon.jpg "Crystallized Dragon"){:alt = "Crystallized Dragon Image"}
+![Third Post](/images/crystallized_dragon.jpg "Crystallized Dragon")
 
 # Artifact Dragon
 
-![Fourth Post](/images/artifact_dragon.jpg "Artifact Dragon"){:alt = "Artifact Dragon Image"}
+![Fourth Post](/images/artifact_dragon.jpg "Artifact Dragon")
