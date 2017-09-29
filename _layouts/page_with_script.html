@@ -63,7 +63,7 @@ layout: default
       }
     </script> -->
 
-    <form class="form-horizontal" action="/diceroll" method="get">
+    <form class="form-horizontal" action="" method="get">
         <fieldset>
         
         <!-- Text input-->
@@ -79,10 +79,11 @@ layout: default
         </form>
 
         <script>
-          var form = document.querySelector("form");
+          var form = document.getElementById("diceroll_form");
+          var str = "Result: "
            form.addEventListener("submit", function(event) {
-            var str = document.getElementById("diceroll_form").elements.value.value;
-            document.getElementById("diceroll_res").innerHTML = "Result: " + str;
+            str = str + document.getElementById("diceroll_form").elements.value.value;
+            document.getElementById("diceroll_res").innerHTML = str;
             //event.preventDefault();
            });
         </script>
