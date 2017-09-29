@@ -4,4 +4,4 @@ title: That Song
 permalink: /audio/
 ---
 
-This is the place where you can roll some dice
+Here you can check this all-time-favourite song with a modern take on it
