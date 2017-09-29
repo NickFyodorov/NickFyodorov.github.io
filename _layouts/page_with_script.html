@@ -85,6 +85,11 @@ layout: default
             var str = "Result: " + form.value;
             document.getElementById("diceroll_res").innerHTML = str;
           }
+
+          var form = document.getElementById("diceroll_form");
+          form.addEventListener("submit", function(event) {
+            event.preventDefault();
+          })
         </script>
   </div>
 
