@@ -83,7 +83,7 @@ layout: default
            form.addEventListener("submit", function(event) {
             var str = document.getElementById("diceroll_form").placeholder;
             document.getElementById("diceroll_res").innerHTML = "Result: " + str;
-            //event.preventDefault();
+            event.preventDefault();
            });
         </script>
   </div>
