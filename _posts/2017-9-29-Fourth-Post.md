@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Fourth Post
 ---
 
 This is the fourth post with a link

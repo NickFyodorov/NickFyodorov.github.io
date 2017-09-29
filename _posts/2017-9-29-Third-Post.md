@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Third Post
 ---
 
 This is the third post with lot's of text

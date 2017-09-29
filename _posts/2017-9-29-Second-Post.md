@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Second Post
 ---
 
 This is the second post with an image
