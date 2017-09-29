@@ -63,7 +63,7 @@ layout: default
       }
     </script> -->
 
-    <form class="form-horizontal" action="" method="get">
+    <form class="form-horizontal" action="" method="post">
         <fieldset>
         
         <!-- Text input-->
@@ -71,7 +71,7 @@ layout: default
           <label class="col-md-4 control-label" for="textinput"></label>  
           <div class="col-md-4">
           <input id="diceroll_form" name="rollForm" type="text" placeholder="1d20" class="form-control input-md">
-          <input class="button" type="submit" name="roll" value="Roll!"></button>
+          <input class="button" type="submit" name="roll" value="Roll!" onclick="my_echo()"></button>
           </div>
         </div>
         
@@ -79,13 +79,12 @@ layout: default
         </form>
 
         <script>
-          var form = document.getElementById("diceroll_form");
-          var str;
-           form.addEventListener("submit", function(event) {
-            str = "Result: " + document.getElementById("diceroll_form").elements.value.value;
+          function my_echo() {
+            var form = document.getElementById("diceroll_form");
+            var str = "Result: " + form.value;
             document.getElementById("diceroll_res").innerHTML = str;
-            //event.preventDefault();
-           });
+            return false;
+          }
         </script>
   </div>
 
