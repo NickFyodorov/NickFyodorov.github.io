@@ -80,9 +80,9 @@ layout: default
 
         <script>
           var form = document.getElementById("diceroll_form");
-          var str = "Result: "
+          var str;
            form.addEventListener("submit", function(event) {
-            str = str + document.getElementById("diceroll_form").elements.value.value;
+            str = "Result: " + document.getElementById("diceroll_form").elements.value.value;
             document.getElementById("diceroll_res").innerHTML = str;
             //event.preventDefault();
            });
