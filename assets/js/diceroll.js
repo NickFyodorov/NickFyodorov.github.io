@@ -2,8 +2,6 @@ var form = document.getElementById("diceroll_form");
 var output = document.getElementById("diceroll_res");
 var formula_output = document.getElementById("diceroll_formula");
 
-
-
 function formula_roll(str) {
     str = str.replace(/(\s+)/g, ''); //removing whitespaces
     var dices = str.split(/[+-]/g); //getting formulas for all dicerolls
@@ -63,8 +61,8 @@ function formula_roll(str) {
 function my_echo() {
     var str = form.value;
     var res = formula_roll(str);
-    output.nodeValue = "Result: " + res;
-    formula_output.nodeValue = "Formula: " + str; // + res;
+    output.innerHTML = "Result: " + res;
+    formula_output.innerHTML = "Formula: " + str; // + res;
     return false; // Prevent page refresh   
 }
 
