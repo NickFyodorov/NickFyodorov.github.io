@@ -8,7 +8,6 @@ layout: default
 
   <div class="entry">
     {{ content }}
-    <script src="../../assets/js/diceroll.js"></script>
 
     <form class="form-horizontal" method="get" name="textinput">
             <fieldset>
@@ -19,6 +18,7 @@ layout: default
                     <div class="col-md-4">
                         <input id="diceroll_form" name="rollForm" type="text" placeholder="1d20" class="form-control input-md">
                         <input class="button" name="roll" value="Roll!" onclick="my_echo()"></button>
+                        <script src="../../assets/js/diceroll.js"></script>
                     </div>
                 </div>
 
