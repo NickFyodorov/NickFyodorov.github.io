@@ -63,8 +63,8 @@ function formula_roll(str) {
 function my_echo() {
     var str = form.value;
     var res = formula_roll(str);
-    output.innerHTML = "Result: " + res;
-    formula_output.innerHTML = "Formula: " + str; // + res;
+    output.nodeValue = "Result: " + res;
+    formula_output.nodeValue = "Formula: " + str; // + res;
     return false; // Prevent page refresh   
 }
 
